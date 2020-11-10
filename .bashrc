@@ -1,6 +1,9 @@
 #export stuff
 export PATH=/usr/local/bin:$PATH:$HOME/.bin
 
+
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 if [ -x "$(which "brew" 2>/dev/null)" ]; then
     export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
     #tab complete more commands
